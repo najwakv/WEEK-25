@@ -1,0 +1,41 @@
+GRAPH-Graph is a non linear data structure that consists of a 
+finite number of vertices(also called nodes) connected by edges.
+
+Trees are specific type of graph data structure.
+
+TYPES
+1.DIRECTED-GRAPH = A graph in which the edges have a direction.
+Edges are usually represented by arrows pointing in the direction
+the graph can be traversed.
+2.UNDIRECTED-GRAPH = A graph in which the edges are bidirectional.
+The absence of an arrow tells us that the graph is undirected.
+MORE:
+* Only verices with no edges.
+* multiple edges from one node.
+* cycles in the graph
+* self loop on the node
+* maybe disconnected.
+* may contain weights on edges representing the cost of traversing
+  that edge.
+
+GRAPH-USAGE:
++ Google-maps:cities = vertices, roads = edges to implement navigation s/m
++ Social-media-sites = users = vertices, links = edges.
+
+REPRESENTATION
+
+1.Adjacency matrix  = 2D array of size v*v where v is the vertices in the graph.
+each row and column represents a vertex.
+If the value of any element say, matrix[i][j] is 1, it represents
+that there is an edge conecting vertex i and vertex j.
+linear time complexity.
+2.Adjacency list = Vertices are stored in a map like data structure
+and every vertex stores a list of its adjacent vertices.
+constant time complexity
+
+Adjacency List is way more efficient in storage wise because,
+with list , we only need to stored the values for the edges that
+exists.With matrix,you store values irrespective of whether an edge exists or not.
+
+Adjacency List allows to store aaditional values such as weight.
+with matrix we have to store it externally.

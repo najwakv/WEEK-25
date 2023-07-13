@@ -1,0 +1,43 @@
+BINARY-TREE:A binary tree data structure in which each node has
+at most two children.They are referred to as left child and
+right child.
+PRINCIPLES
+The value of each left node must be smaller than the parent node.
+The value of each right node must be greater then the parent.
+Each node have atmost two children.
+OPERATIONS
+1.Insertion:Add node to the tree
+2.Search:Find a node given its value
+3.DFS(Depth-for-search) & BFS(Bredth-for-search):Visit all nodes in the tree
+4.Deletion:Remove a node given its value
+APPLICATIONS
+1.Searching
+2.Sorting
+3.To implement abstract data types such as lookup tables and priority queues.
+DFS = The DFS algorithm starts at the root node and explores as far as possible
+along each branch before backtracking.
+Visit the root node , visit all the nodes in the left subtree and visit all the nodes 
+in the right subtree.
+Depending on the order in which we do this, there can be three types of DFS
+traversals.
+1.Preorder
+ step-1:Read the data of the node
+ step-2:Visit the left subtree
+ step-3:Visit the right subtree
+2.Inorder
+ step-1:Visit the left subtree 
+ step-2:Read the data of the node
+ step-3:Visit the right subtree
+3.Postorder
+ step-1:Visit the left subtree
+ step-2:Visit right subtree
+ step-3:Read the data of the node
+BFS = Explore all nodes at the present depth prior to moving on to the 
+next depth level.
+1.Create a queues
+2.Enqueue the root node
+3.As long as the queue exist in the queue
+ a.Dequeue the node from the front
+ b.Read the nodes value.
+ c.Enqueue the nodes left child if it exists
+ d.Enqueue the nodes right child if it exists
